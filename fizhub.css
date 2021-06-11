@@ -4,26 +4,26 @@ body{
 }
 .menubutton{
 	transform: rotate(90deg);
-	width: 30px;
-	height: 30px;
+	width: 18px;
+	height: 35px;
 
 	padding: 10px;
 	font-size: 30px;
 	transition: 0.5s linear;
 	color: #fff;
-	margin-top: 8px;
+	margin-top: 0px;
 	margin-left: 10px;
 }
 .menubutton2{
 	transform: rotate(-270deg);
-	width: 30px;
-	height: 30px;
+	width: 18px;
+	height: 35px;
 
 	padding: 10px;
 	font-size: 30px;
 	transition: 0.5s linear;
 	color: #fff;
-	margin-top: 8px;
+	margin-top: 0px;
 	margin-left: 10px;
 }
 .header{

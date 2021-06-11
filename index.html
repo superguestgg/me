@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fizhub</title>
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/ilyah/%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/1/fizhub.css">
+	<script type="text/javascript">
+		function openmenu() {
+			if (document.getElementById("menubutton").className=="menubutton") {
+				document.getElementById("menubutton").className="menubutton2";
+				document.getElementById("menu").className="menuopened";
+				
+			} else {
+				document.getElementById("menubutton").className="menubutton";
+				document.getElementById("menu").className="menuclosed";
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div class="header"> 
+		<div class="menubutton" id="menubutton" onclick="openmenu()">|||</div>
+		<div class="changetheme" id="changetheme" onclick="changetheme()"></div>
+	</div>
+	<div class="menuclosed" id="menu">
+		<a href="/">главная</a><br>
+		<a href="https://superguestgg.github.io/web-paint/terraria">web-paint</a><br>
+		<a href="https://superguestgg.github.io/chess-and-checkers/onlychess.html">chess-and-checkers</a><br>
+		<a href="https://superguestgg.github.io/session">session</a><br>
+		<a href="/">что-то еще</a><br>
+
+	</div>
+</body>
+</html>

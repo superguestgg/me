@@ -219,7 +219,7 @@ margin-bottom: 10px;
 	background-color: #567;
 	margin: auto;
 	width: 300px;
-	max-width: calc(100% - 8px);
+	max-width: calc(100% - 10px);
 	transition: 0.3s ease-in-out;
 	margin-top: 5px;
 	text-align: center;
@@ -271,4 +271,10 @@ a:hover{
 	color: #eee;
 	margin-bottom: 50px;
 
+}
+.invisible{
+	width:0px;
+	height:0px;
+	font-size:0px;
+	overflow: hidden;
 }

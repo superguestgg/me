@@ -249,6 +249,23 @@ margin-bottom: 10px;
 	margin-top: 5px;
 
 }
+.smalltextplace{
+	width: 90%;
+	left: 5%;
+	padding: 10px;
+	overflow: hidden;
+}
+.textplace{
+	width: 94%;
+	left: 5%;
+	padding: 15px;
+	overflow: hidden;
+	color: #def;
+	margin-bottom: 5px;	
+	font-size: 22px;
+	margin-left: 3%;
+	width: 94%;
+}
 .like{
 	border: 2px solid #123;
 	margin-top: 5px;

@@ -288,6 +288,33 @@ margin-bottom: 10px;
 	max-width: 40%;
 	transition: 0.3s ease-in-out;
 }
+.message{
+	margin-top: 0px;
+	border-top: 3px solid #234;
+	border-radius: 0 0 20px 20px;
+	padding: 15px;
+	font-size: 20px;
+	background-color: #567;
+	margin-left: 10%;
+	width: 80%;
+	transition: 0.2s ease-in-out;
+	color: #def;
+	overflow: hidden;
+	box-shadow: 0 0 0;
+}
+.message:hover{
+	margin-top: 0px;
+	border-top: 3px solid #123;
+	border-radius: 0 0 20px 20px;
+	padding: 15px;
+	font-size: 20px;
+	background-color: #456;
+	margin-left: 10%;
+	width: 80%;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 0 3px 1px #888
+
+}
 a{
 	text-decoration: none;
 	font-size: 25px;

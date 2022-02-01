@@ -11,7 +11,7 @@ textarea{
 }
 input{
 	color: #fff;
-	background-color: #345;
+	background-color: #081018;
 	padding: 5px;
 	border-radius: 5px;
 }
@@ -220,24 +220,24 @@ margin-bottom: 10px;
 }
 .task{
 	margin-top: 20px;
-	border: 4px solid #234;
+	border: 4px solid #345;
 	border-radius: 10px;
 	padding: 15px;
 	font-size: 20px;
-	background-color: #567;
-	margin-left: 10%;
-	width: 80%;
+	background-color: #081018;
+	margin-left: 9%;
+	width: 82%;
 	transition: 0.5s ease-in-out;
 	color: #def;
 	overflow: hidden;
 }
 .task:hover{
 	margin-top: 20px;
-	border: 4px solid #123;
+	border: 4px solid #678;
 	border-radius: 10px;
 	padding: 15px;
 	font-size: 20px;
-	background-color: #345;
+	background-color: #081018;
 	margin-left: 8%;
 	width: 84%;
 	transition: 0.5s ease-in-out;
@@ -245,20 +245,20 @@ margin-bottom: 10px;
 }
 .taskheader{
 	margin-bottom: 20px;
-	border-bottom: 4px solid #123;	
+	border-bottom: 4px solid #345;	
 	padding: 10px;
 	padding-bottom: 20px;
-	font-size: 25px;
+	font-size: 22px;
 	margin-left: 3%;
 	width: 94%;
 	transition: 0.5s ease-in-out;	
 }
 .tasksubpart{
-	border-bottom: 3px solid #012;
+	border-bottom: 3px solid #345;
 	border-radius: 15px 0 15px 0;
 	padding: 10px;
-	font-size: 20px;
-	background-image: linear-gradient(to right, #345, #456);
+	font-size: 18px;
+	background-image: linear-gradient(to right, #101922, #081018);
 	margin: auto;
 	width: 90%;
 	
@@ -266,11 +266,11 @@ margin-bottom: 10px;
 	margin-top:15px;
 }
 .solutionbutton{
-	border: 2px solid #123;
+	border: 2px solid #456;
 	border-radius: 5px;
 	padding: 5px;
 	font-size: 20px;
-	background-color: #567;
+	background-color: #456;
 	margin: auto;
 	width: 300px;
 	max-width: calc(100% - 10px);
@@ -279,11 +279,11 @@ margin-bottom: 10px;
 	text-align: center;
 }
 .solutionbutton:hover{
-	border: 2px solid #123;
+	border: 2px solid #456;
 	border-radius: 5px;
 	padding: 5px;
 	font-size: 20px;
-	background-color: #234;
+	background-color: #101922;
 	margin: auto;
 	width: 300px;
 	max-width: calc(100% - 8px);
@@ -389,13 +389,13 @@ margin-bottom: 10px;
 }
 a{
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 22px;
 	color: #eee;
 	margin-bottom: 50px;
 }
 a:hover{
 	text-decoration: underline;
-	font-size: 25px;
+	font-size: 22px;
 	color: #eee;
 	margin-bottom: 50px;
 

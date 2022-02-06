@@ -26,7 +26,7 @@ option:hover{
 	background-color: #fff;
 }
 i{
-background-image: linear-gradient(to right,#234, #456);
+background-image: linear-gradient(to right,#234, #345);
 border-radius: 5px;
 margin-left: 20px;
 padding: 5px;
@@ -159,24 +159,52 @@ margin-bottom: 10px;
 }
 .taskname{
 	position: fixed;
-	width: 200px;
-	max-width: 50%;
+	width: 300px;
+	max-width: 40%;
 	transition: 0.5s ease-out;
 	top: 10px;
-	
-	left: calc(50% - 75px);
-	background-image: linear-gradient(to top, #123, #678);
+	overflow: hidden;
+	left: calc(50% - 145px);
+	background-image: linear-gradient(to top, #234, #456);
+	border-bottom: 2px solid #9ab;
+	color: #fff;	
 	border-radius: 5px;
 	padding: 5px;
 	text-align: center
 	z-index: 1500;
 	font-size: 25px;
-	color: #fff;
+	
+}
+.spanpagename{
+	transition: 0.5s linear;
+	background: linear-gradient(to left top, #abc, #fff);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	color: #fff;	
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	z-index: 1500;
+	font-size: 25px;
+	
+}
+.spanpagename:hover{
+	transition: 0.5s linear;
+	background: linear-gradient(to left, #def, #fff);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	color: #fff;	
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	z-index: 1500;
+	font-size: 25px;
+	
 }
 .loginbutton{
 	position: fixed;
 	width: 150px;
-	max-width: 50%;
+	max-width: 40%;
 	transition: 0.5s ease-out;
 	top: 5px;
 	right: 5px;
@@ -276,6 +304,7 @@ margin-bottom: 10px;
 	max-width: calc(100% - 8px);
 	transition: 0.3s ease-in-out;
 	margin-top: 5px;
+	text-align: center;
 }
 .solutionbutton:hover{
 	border: 2px solid #456;

@@ -157,6 +157,12 @@ margin-bottom: 10px;
 
 
 }
+.menusubpart{
+	padding: 7px;
+	font-size: 25px;
+	color: #eee;
+	overflow-y: visible;
+}
 .taskname{
 	max-height: 25px;
 	position: fixed;
@@ -421,12 +427,14 @@ a{
 	font-size: 23px;
 	color: #eee;
 	margin-bottom: 50px;
+	margin-top: 60px;
 }
 a:hover{
 	text-decoration: underline;
 	font-size: 23px;
 	color: #eee;
 	margin-bottom: 50px;
+	margin-top: 60px;
 
 }
 .invisible{

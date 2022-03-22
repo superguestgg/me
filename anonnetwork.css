@@ -48,6 +48,14 @@ padding: 5px;
 border: 1px solid #999;
 margin-bottom: 10px;
 }
+k{
+background-color: #123;
+border-radius: 2px;
+margin-left: 20px;
+padding: 5px;
+border: 2px solid #999;
+margin-bottom: 10px;
+}
 .informationtheme{
 background-image: linear-gradient(to right,#234, #456);
 border-radius: 5px;
@@ -166,7 +174,7 @@ margin-bottom: 10px;
 
 }
 .menusubpart{
-	padding: 7px;
+	padding: 4px;
 	font-size: 25px;
 	color: #eee;
 	overflow-y: visible;

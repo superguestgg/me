@@ -33,6 +33,21 @@ option:hover{
 	color: #1ff;
 	background-color: #fff;
 }
+a{
+	text-decoration: none;
+	font-size: 23px;
+	color: #eee;
+	margin-bottom: 50px;
+	margin-top: 60px;
+}
+a:hover{
+	text-decoration: underline;
+	font-size: 23px;
+	color: #eee;
+	margin-bottom: 50px;
+	margin-top: 60px;
+
+}
 i{
 background-image: linear-gradient(to right,#234, #345);
 border-radius: 5px;
@@ -237,7 +252,7 @@ margin-bottom: 10px;
 	padding: 5px;
 	text-align: center
 	z-index: 1500;
-	font-size: 25px;
+	font-size: 24px;
 	color: #fff;
 }
 .bod{
@@ -388,6 +403,8 @@ margin-bottom: 10px;
 	position: fixed;
 	top: 50px;
 	border-top: 1px solid #456;
+	border-left: 3px solid #456;
+	border-right: 3px solid #456;
 	border-bottom: 1px solid #456;
 	padding: 15px;
 	font-size: 20px;
@@ -465,21 +482,7 @@ margin-bottom: 10px;
 	
 
 }
-a{
-	text-decoration: none;
-	font-size: 23px;
-	color: #eee;
-	margin-bottom: 50px;
-	margin-top: 60px;
-}
-a:hover{
-	text-decoration: underline;
-	font-size: 23px;
-	color: #eee;
-	margin-bottom: 50px;
-	margin-top: 60px;
 
-}
 .invisible{
 	width:0px;
 	height:0px;

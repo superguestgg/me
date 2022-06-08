@@ -193,6 +193,17 @@ margin-bottom: 10px;
 	font-size: 25px;
 	color: #eee;
 	overflow-y: visible;
+	border-left: solid 0px #eee;
+	transition: 0.5s ease-in-out;
+
+}
+.menusubpart:hover{
+	padding: 4px;
+	font-size: 25px;
+	color: #eee;
+	overflow-y: visible;
+	border-left: solid 5px #eee;
+	transition: 0.5s ease-in-out;
 }
 symbol{
 	
@@ -264,6 +275,7 @@ symbol{
 .bod{
 	margin-top: 70px;
 	width:100%;
+	background-image: linear-gradient(to left, #081018, #081018);
 }
 .room{
 	margin-top: 0px;

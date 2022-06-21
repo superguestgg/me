@@ -339,6 +339,7 @@ report:hover{
 	margin-top: 5px;
 
 }
+
 .smalltextplace{
 	width: 90%;
 	left: 5%;
@@ -378,7 +379,35 @@ report:hover{
 	max-width: 40%;
 	transition: 0.3s ease-in-out;
 }
-
+.message{
+	margin-top: 10px;
+	border: 4px solid #234;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 20px;
+	transition: 0.3s ease-in-out;
+	color: #def;
+	overflow: hidden;
+	box-shadow: 0 0 0;
+	padding: 15px;
+	background-color: #567;
+	margin-left: 10%;
+	width: 80%;
+}
+.message:hover{
+	margin-top: 10px;
+	border: 4px solid #234;
+	border-radius: 10px;
+	padding: 15px;
+	font-size: 20px;
+	transition: 0.3s ease-in-out;
+	color: #def;
+	overflow: hidden;
+	padding: 15px;
+	background-color: #345;
+	margin-left: 10%;
+	width: 80%;
+	box-shadow: 0 0 0;
 a{
 	text-decoration: none;
 	font-size: 23px;

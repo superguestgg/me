@@ -70,9 +70,20 @@ function showtext(textid){
 
 			
 		}
+function openpage(){
+	ismobileversion()
+}
 function ismobileversion(){
 	if (document.body.clientWidth<document.body.clientHeight){
 		//alert('mobile')
-		document.getElementById("style").innerHTML=".task{margin-right:2%;;margin-left:2%;width:auto}.task:hover{margin-right:2%;;margin-left:2%;width:auto}";
+		document.getElementById("style").innerHTML=".task{margin-right:2%;margin-left:2%;width:auto}.task:hover{margin-right:2%;margin-left:2%;width:auto}.pagemenu{margin-right:2%;;margin-left:2%;width:auto}.pagemenu:hover{margin-right:2%;;margin-left:2%;width:auto}.message{margin-right:2%;margin-left:2%;width:auto}.message:hover{margin-right:2%;margin-left:2%;width:auto}";
 	}
+}
+
+function saveaccount(){
+	document.cookie="sorryitsimpossible={{user_name}}; samesite=strict; path=/; max-age=3600000000000000"
+	document.cookie="user_name={{user_name}}; samesite=strict; path=/; max-age=3600000000000000"
+	document.cookie="user_id={{user_id}}; samesite=strict; path=/; max-age=3600000000000000"
+	document.cookie="session_key={{session_key}}; samesite=strict; path=/; max-age=3600000000000000"
+		
 }

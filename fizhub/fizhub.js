@@ -71,10 +71,10 @@ function showtext(textid){
 			
 		}
 function openpage(){
-	ismobileversion()
+	ismobileversion();
 }
 function ismobileversion(){
-	if (document.body.clientWidth<document.body.clientHeight){
+	if (window.innerWidth<window.innerHeight){
 		//alert('mobile')
 		document.getElementById("style").innerHTML=".task{margin-right:2%;margin-left:2%;width:auto}.task:hover{margin-right:2%;margin-left:2%;width:auto}.pagemenu{margin-right:2%;;margin-left:2%;width:auto}.pagemenu:hover{margin-right:2%;;margin-left:2%;width:auto}.message{margin-right:2%;margin-left:2%;width:auto}.message:hover{margin-right:2%;margin-left:2%;width:auto}";
 	}

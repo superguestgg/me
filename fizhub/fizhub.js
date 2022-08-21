@@ -73,10 +73,12 @@ function showtext(textid){
 function openpage(){
 	ismobileversion();
 }
+openpage();
+console.log("ggg")
 function ismobileversion(){
 	if (window.innerWidth<window.innerHeight){
 		//alert('mobile')
-		document.getElementById("style").innerHTML=".task{margin-right:2%;margin-left:2%;width:auto}.task:hover{margin-right:2%;margin-left:2%;width:auto}.pagemenu{margin-right:2%;;margin-left:2%;width:auto}.pagemenu:hover{margin-right:2%;;margin-left:2%;width:auto}.message{margin-right:2%;margin-left:2%;width:auto}.message:hover{margin-right:2%;margin-left:2%;width:auto}";
+		document.getElementById("style").innerHTML=".task{margin-right:2%;margin-left:2%;width:auto}.task:hover{margin-right:2%;margin-left:2%;width:auto}.pagemenu{margin-right:2%;;margin-left:2%;width:auto}.pagemenu:hover{margin-right:2%;;margin-left:2%;width:auto}.message{margin-right:2%;margin-left:2%;width:auto}.message:hover{margin-right:2%;margin-left:2%;width:auto}.chat{margin-right:2%;margin-left:2%;width:auto}.chat:hover{margin-right:2%;margin-left:2%;width:auto}";
 	}
 }
 
@@ -86,4 +88,8 @@ function saveaccount(){
 	document.cookie="user_id={{user_id}}; samesite=strict; path=/; max-age=3600000000000000"
 	document.cookie="session_key={{session_key}}; samesite=strict; path=/; max-age=3600000000000000"
 		
+}
+function savesolution(){
+			text=document.getElementById("textarea").value;
+			document.getElementById("sendsolutionbutton").innerHTML='<a id="a" href="/physic-in-sesc/{{task.id}}/makesolution3/'+text+'">отправить решение</a>'
 }

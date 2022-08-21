@@ -490,3 +490,10 @@ a:hover{
 	margin-bottom: -5px;
 	margin-right: 15px;
 }
+.user_normal_icon{
+	height: 300px;
+	max-width: 90%;
+	border-radius: 10px;
+	margin: auto;
+}
+

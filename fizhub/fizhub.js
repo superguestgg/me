@@ -78,7 +78,13 @@ console.log("ggg")
 function ismobileversion(){
 	if (window.innerWidth<window.innerHeight){
 		//alert('mobile')
-		document.getElementById("style").innerHTML=".task{margin-right:2%;margin-left:2%;width:auto}.task:hover{margin-right:2%;margin-left:2%;width:auto}.pagemenu{margin-right:2%;;margin-left:2%;width:auto}.pagemenu:hover{margin-right:2%;;margin-left:2%;width:auto}.message{margin-right:2%;margin-left:2%;width:auto}.message:hover{margin-right:2%;margin-left:2%;width:auto}.chat{margin-right:2%;margin-left:2%;width:auto}.chat:hover{margin-right:2%;margin-left:2%;width:auto}";
+		let classes=['task','pagemenu','message','chat']
+		ih=""
+		for (let i = 0; i < classes.length;i++){
+			clas=classes[i]
+			ih+=`.${clas}{margin-right:2%;margin-left:2%;width:auto}.${clas}:hover{margin-right:2%;margin-left:2%;width:auto}`;
+		}
+		document.getElementById("style").innerHTML=ih;
 	}
 }
 

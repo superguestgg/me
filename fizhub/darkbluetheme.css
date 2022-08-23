@@ -497,3 +497,17 @@ a:hover{
 	margin: auto;
 }
 
+
+
+.chat{
+	border: 0px solid #cde;
+	background-color: #123;
+	color: #cde;
+	
+}
+.chat:hover{
+	border: 0px solid #def;
+	background-color: #234;
+}
+
+

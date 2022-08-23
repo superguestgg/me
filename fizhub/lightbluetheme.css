@@ -459,18 +459,11 @@ report:hover{
 	transition: 0.3s ease-in-out;
 }
 .message{
-	margin-top: 10px;
-	padding: 15px;
-	font-size: 20px;
-	transition: 0.3s ease-in-out;
-	overflow: hidden;
-	box-shadow: 0 0 0;
-	padding: 15px;
+
 	border: 0px solid #cde;
-	border-radius: 10px;
+
 	background-color: #a6d2ff;
-	margin-left: 9%;
-	width: 82%;
+
 	color: #123;
 
 }
@@ -490,7 +483,43 @@ report:hover{
 	margin-left: 9%;
 	width: 82%;
 }
+.my_message{
+	border: 0px solid #cde;
 
+	background-color: #82bffb;
+
+	color: #123;
+
+}
+.my_message:hover{
+
+	color: #234;
+
+
+	border: 0px solid #def;
+
+	background-color: #82bffb;
+
+}
+.another_message{
+	border: 0px solid #cde;
+
+	background-color: #a6d2ff;
+	background-color: #c2e0ff;
+
+	color: #123;
+
+}
+.another_message:hover{
+
+	color: #234;
+
+
+	border: 0px solid #def;
+
+	background-color: #c2e0ff;
+
+}
 a{
 	text-decoration: none;
 	font-size: 23px;
@@ -522,4 +551,24 @@ a:hover{
 	max-width: 90%;
 	border-radius: 10px;
 	margin: auto;
+}
+
+
+
+
+.chat{
+	border: 0px solid #cde;
+	background-color: #a6d2ff;
+	color: #123;
+	
+}
+.chat:hover{
+	border: 0px solid #def;
+	background-color: #c2e0ff;
+}
+
+.create_message_place{
+	border: 0px solid #def;
+	background-color: #c2e0ff;
+	
 }

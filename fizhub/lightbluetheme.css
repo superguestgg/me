@@ -468,20 +468,13 @@ report:hover{
 
 }
 .message:hover{
-	margin-top: 10px;
-	transition: 0.3s ease-in-out;
-	color: #234;
-	overflow: hidden;
-	padding: 15px;
 
-	box-shadow: 0 0 0;
+	color: #234;
+
 	border: 0px solid #def;
-	border-radius: 10px;
-	padding: 15px;
-	font-size: 20px;
+
 	background-color: #c2e0ff;
-	margin-left: 9%;
-	width: 82%;
+
 }
 .my_message{
 	border: 0px solid #cde;
@@ -571,4 +564,21 @@ a:hover{
 	border: 0px solid #def;
 	background-color: #c2e0ff;
 	
+}
+.messenger_menu{
+	background-color: #7fb3e8;
+}
+.chats_mini_place{
+	background-color: #7fb3e8;
+}
+
+.chat_mini{
+	border: 0px solid #cde;
+	background-color: #a6d2ff;
+	color: #123;
+	
+}
+.chat_mini:hover{
+	border: 0px solid #def;
+	background-color: #c2e0ff;
 }

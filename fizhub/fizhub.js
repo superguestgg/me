@@ -78,12 +78,20 @@ console.log("ggg")
 function ismobileversion(){
 	if (window.innerWidth<window.innerHeight){
 		//alert('mobile')
-		let classes=['task','pagemenu','message','chat']
+		let classes=['task','pagemenu','message','chat','my_message_place','another_message_place','messenger_place',]
 		ih=""
 		for (let i = 0; i < classes.length;i++){
 			clas=classes[i]
 			ih+=`.${clas}{margin-right:2%;margin-left:2%;width:auto}.${clas}:hover{margin-right:2%;margin-left:2%;width:auto}`;
 		}
+		classes=['create_message_place']
+		
+		for (let i = 0; i < classes.length;i++){
+			clas=classes[i]
+			ih+=`.${clas}{right:2%;left:calc(2% + 50px);width:auto}.${clas}:hover{right:2%;left:calc(2% + 50px);width:auto}`;
+		}
+		ih+=`.messenger_menu{width: 50px; top: 52px; left: -10px}.messenger_menu:hover{width: 50px; top: 52px; left: -10px}`
+		ih+=`.chats_mini_place{left: -100%}.chats_mini_place:hover{left: -100%}`
 		document.getElementById("style").innerHTML=ih;
 	}
 }

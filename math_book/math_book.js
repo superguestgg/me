@@ -9,6 +9,7 @@ function openmenu() {
 			}
 }
 
+
 function openaccountfromcookie(string){
 			let cookies=(document.cookie).split(";");
 			//alert(cookies[2]);
@@ -43,8 +44,10 @@ function openaccountfromcookie(string){
 			}
 }
 
+
 let massiveoftaskids=[]
 let massiveoftasks=[]
+
 
 function hiddentext(textid){
 			let text=document.getElementById(textid).innerHTML
@@ -60,17 +63,21 @@ function hiddentext(textid){
 			}
 }
 
+
 function showtext(textid){
 			document.getElementById(textid).innerHTML=massiveoftasks[massiveoftaskids.indexOf(textid)]
 			document.getElementById(textid).setAttribute("onclick", "hiddentext(id)")
 		}
 
+
 function openpage(){
 	ismobileversion();
 }
 
+
 openpage();
 console.log("ggg");
+
 
 function ismobileversion(){
 	if (window.innerWidth<window.innerHeight){
@@ -93,10 +100,55 @@ function ismobileversion(){
 	}
 }
 
+
 function saveaccount(){
 	document.cookie="math_book_sorryitsimpossible={{user_name}}; samesite=strict; path=/; max-age=3600000000000000"
 	document.cookie="math_book_user_name={{user_name}}; samesite=strict; path=/; max-age=3600000000000000"
 	document.cookie="math_book_user_id={{user_id}}; samesite=strict; path=/; max-age=3600000000000000"
 	document.cookie="math_book_session_key={{session_key}}; samesite=strict; path=/; max-age=3600000000000000"
-		
 }
+
+
+function loadLatex(id_from, id_for){
+    		resultText="";
+    		text=document.getElementById(id_from).innerHTML;
+    		//console.log(text);
+    		// 0=normal ; 1=formula
+    		typeElementNow=0;
+    		formula="";
+    		for (let i=0;i<=text.length;i++){
+    			//console.log(text[i]);
+    			if (text[i]=="$"){
+    				typeElementNow++;
+    				typeElementNow %= 2;
+    				//console.log(formula);
+    				resultText+=katex.renderToString(formula,{throwOnError: true});
+    				formula="";
+    			} else if (typeElementNow==1){
+    				formula+=text[i];
+    			} else {
+    				//console.log(resultText);
+    				if (text[i]=="\\"){
+    					
+    					console.log(text[i+1]);
+    					if (text[i+1]=="i" && text[i+2]=="t" && text[i+3]=="e" && text[i+4]=="m"){
+    						resultText+="<br>";
+    						i+=4;
+    					}
+    					if (text[i+1]=="e" && text[i+2]=="n" && text[i+3]=="d"){
+    						resultText+="<br>";
+    						i+=3;
+    					}
+    					if (text[i+1]=="b" && text[i+2]=="e" && text[i+3]=="g" && text[i+4]=="i" && text[i+5]=="n"){
+    						resultText+="<br>";
+    						i+=5;
+    					}
+    				}
+    				else{
+    					resultText+=text[i];
+    				}
+    			}
+    		}
+    		//console.log(resultText);
+    		document.getElementById(id_for).innerHTML=resultText;
+    	}

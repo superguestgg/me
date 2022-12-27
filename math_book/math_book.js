@@ -152,6 +152,9 @@ function loadLatex(id_from, id_for){
 			}
 		}
 	}
+	for (var i=0;i<100;i++){
+		resultText=resultText.replace("(enter)", "<br>");
+	}
 	//console.log(resultText);
 	document.getElementById(id_for).innerHTML=resultText;
 }

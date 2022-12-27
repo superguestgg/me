@@ -2,7 +2,6 @@ function openmenu() {
 	if (document.getElementById("menubutton").className=="menubutton") {
 		document.getElementById("menubutton").className="menubutton2";
 		document.getElementById("menu").className="menuopened";
-		
 	} else {
 		document.getElementById("menubutton").className="menubutton";
 		document.getElementById("menu").className="menuclosed";
@@ -31,33 +30,37 @@ function openaccountfromcookie(string){
 		document.getElementById("loginbutton").innerHTML=`<a href="/math_book/myaccount/">${username}</a>`;
 	}
 	if (string=="name"){
-		return username
+		return username;
 	} else if (string=="password"){
-		return userpassword
+		return userpassword;
 	}
 
 	
 	if (username == "undefined guest"){
-		document.getElementById("creatorname2").innerHTML="вы можете зарегистрироваться <a href='/math_book/login/'>здесь</a> "
+		if (document.getElementById("creatorname2")!=null){
+			document.getElementById("creatorname2").innerHTML="вы можете зарегистрироваться <a href='/math_book/login/'>здесь</a>";
+		}
 	} else {
-		document.getElementById("creatorname2").remove()
+		if (document.getElementById("creatorname2")!=null){
+			document.getElementById("creatorname2").remove();
+		}
 	}
 }
 
 
-let massiveoftaskids=[]
-let massiveoftasks=[]
+let massiveoftaskids=[];
+let massiveoftasks=[];
 
 
 function hiddentext(textid){
-	let text=document.getElementById(textid).innerHTML
-	let minitext=text.substring(0,90)
-	minitext=minitext+"..."
-	massiveoftaskids.push(textid)
-	massiveoftasks.push(text)
-	document.getElementById(textid).setAttribute("onclick", "showtext(id)")
+	let text=document.getElementById(textid).innerHTML;
+	let minitext=text.substring(0,90);
+	minitext=minitext+"...";
+	massiveoftaskids.push(textid);
+	massiveoftasks.push(text);
+	document.getElementById(textid).setAttribute("onclick", "showtext(id)");
 	if (text.length>90){
-		document.getElementById(textid).innerHTML="краткое условие: "+minitext
+		document.getElementById(textid).innerHTML="краткое условие: "+minitext;
 	} else {
 		document.getElementById(textid).innerHTML=text		
 	}
@@ -65,8 +68,8 @@ function hiddentext(textid){
 
 
 function showtext(textid){
-	document.getElementById(textid).innerHTML=massiveoftasks[massiveoftaskids.indexOf(textid)]
-	document.getElementById(textid).setAttribute("onclick", "hiddentext(id)")
+	document.getElementById(textid).innerHTML=massiveoftasks[massiveoftaskids.indexOf(textid)];
+	document.getElementById(textid).setAttribute("onclick", "hiddentext(id)");
 }
 
 
@@ -82,8 +85,8 @@ console.log("ggg");
 function ismobileversion(){
 	if (window.innerWidth<window.innerHeight){
 		//alert('mobile')
-		let classes=['task','pagemenu','message','chat','my_message_place','another_message_place','messenger_place',]
-		ih=""
+		let classes=['task','pagemenu','message','chat','my_message_place','another_message_place','messenger_place',];
+		ih="";
 		for (let i = 0; i < classes.length;i++){
 			clas=classes[i]
 			ih+=`.${clas}{margin-right:2%;margin-left:2%;width:auto}.${clas}:hover{margin-right:2%;margin-left:2%;width:auto}`;

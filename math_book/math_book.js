@@ -155,6 +155,13 @@ function loadLatex(id_from, id_for){
 	for (var i=0;i<100;i++){
 		resultText=resultText.replace("(enter)", "<br>");
 	}
+	resultText=resultText.replace("undefined","");
+	
 	//console.log(resultText);
 	document.getElementById(id_for).innerHTML=resultText;
+}
+
+
+function processingTicket(id_from, id_for){
+	//later
 }

@@ -166,7 +166,7 @@ function processingTicket(id_from, id_for){
 	loadLatex(id_from, id_for);
 	text=document.getElementById(id_from).innerHTML;
 	for (let i=0;i<=1000;i++){
-		text=text.replace("&gt;","<").replace("&lt;","<");
+		text=text.replace("&gt;",">").replace("&lt;","<");
 	}
 	resultText=text.replace("undefined","");
 	

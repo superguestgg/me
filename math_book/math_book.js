@@ -174,3 +174,14 @@ function processingTicket(id_from, id_for){
 	document.getElementById(id_for).innerHTML=resultText;
 	//later
 }
+
+
+function open_session_ticket(){
+	if (document.getElementById("session_ticket_open_close_button").innerHTML=="открыть"){
+		document.getElementById("session_ticket_open_close_button").innerHTML="закрыть";
+		document.getElementById("session_ticket").className="session_ticket_opened";
+	} else if (document.getElementById("session_ticket_open_close_button").innerHTML=="закрыть"){
+		document.getElementById("session_ticket_open_close_button").innerHTML="открыть";
+		document.getElementById("session_ticket").className="session_ticket";
+	}
+}

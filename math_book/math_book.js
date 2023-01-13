@@ -164,6 +164,11 @@ function loadLatex(id_from, id_for){
 
 function processingTicket(id_from, id_for){
 	loadLatex(id_from, id_for);
+	processingPage(id_from, id_for);
+}
+
+
+function processingPage(){
 	text=document.getElementById(id_from).innerHTML;
 	for (let i=0;i<=1000;i++){
 		text=text.replace("&gt;",">").replace("&lt;","<");

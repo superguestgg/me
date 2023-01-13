@@ -168,7 +168,7 @@ function processingTicket(id_from, id_for){
 }
 
 
-function processingPage(){
+function processingPage(id_from, id_for){
 	text=document.getElementById(id_from).innerHTML;
 	for (let i=0;i<=1000;i++){
 		text=text.replace("&gt;",">").replace("&lt;","<");

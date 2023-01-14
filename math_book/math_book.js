@@ -115,6 +115,9 @@ function saveaccount(){
 function loadLatex(id_from, id_for){
 	resultText="";
 	text=document.getElementById(id_from).innerHTML;
+	for (let i=0;i<=1000;i++){
+		text=text.replace("&gt;",">").replace("&lt;","<");
+	}
 	//console.log(text);
 	// 0=normal ; 1=formula
 	typeElementNow=0;

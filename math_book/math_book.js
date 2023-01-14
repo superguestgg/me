@@ -163,8 +163,8 @@ function loadLatex(id_from, id_for){
 
 
 function processingTicket(id_from, id_for){
-	loadLatex(id_from, id_for);
 	processingPage(id_from, id_for);
+	loadLatex(id_from, id_for);
 }
 
 

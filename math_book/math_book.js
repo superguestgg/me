@@ -115,9 +115,9 @@ function saveaccount(){
 function loadLatex(id_from, id_for){
 	resultText="";
 	text=document.getElementById(id_from).innerHTML;
-	for (let i=0;i<=1000;i++){
-		text=text.replace("&gt;",">").replace("&lt;","<");
-	}
+	//for (let i=0;i<=1000;i++){
+	//	text=text.replace("&gt;",">").replace("&lt;","<");
+	//}
 	//console.log(text);
 	// 0=normal ; 1=formula
 	typeElementNow=0;
@@ -131,6 +131,17 @@ function loadLatex(id_from, id_for){
 			resultText+=katex.renderToString(formula,{throwOnError: true});
 			formula="";
 		} else if (typeElementNow==1){
+			if (text[i]=="&"){
+				if (text[i+1]=="g" && text[i+2]=="t" && text[i+3]==";"){
+					i+=3;
+					formula+=">";
+					continue;
+				} if (text[i+1]=="l" && text[i+2]=="t" && text[i+3]==";"){
+					i+=3;
+					formula+="<";
+					continue;
+				}
+			}
 			formula+=text[i];
 		} else {
 			//console.log(resultText);
@@ -173,12 +184,40 @@ function processingTicket(id_from, id_for){
 
 function processingPage(id_from, id_for){
 	text=document.getElementById(id_from).innerHTML;
-	for (let i=0;i<=1000;i++){
-		text=text.replace("&gt;",">").replace("&lt;","<");
+	//for (let i=0;i<=1000;i++){
+	//	text=text.replace("&gt;",">").replace("&lt;","<");
+	//}
+	resultText="";
+	textLen=text.length;
+	for (let i=0;i<textLen;i++){
+		if (text[i]=="$"){
+			resultText+=text[i];
+			i++;
+			if (i==textLen){
+				break;
+			}
+			while (text[i]!="$"){
+				resultText+=text[i];
+				i++;
+				if (i==textLen){
+					break;
+				} 
+			}
+		} if (text[i]=="&"){
+			if (text[i+1]=="g" && text[i+2]=="t" && text[i+3]==";"){
+				i+=3;
+				resultText+=">";
+				continue;
+			} if (text[i+1]=="l" && text[i+2]=="t" && text[i+3]==";"){
+				i+=3;
+				resultText+="<";
+				continue;
+			}
+		}
+		resultText+=text[i];
 	}
-	resultText=text.replace("undefined","");
-	
-	//console.log(resultText);
+	console.log(text);
+	console.log(resultText);
 	document.getElementById(id_for).innerHTML=resultText;
 	//later
 }

@@ -111,6 +111,7 @@ function saveaccount(){
 	document.cookie="math_book_session_key={{session_key}}; samesite=strict; path=/; max-age=3600000000000000"
 }
 
+
 function checkSubstringOnIndex(text, index, substring){
 	let t = true;
 	let substringLength = substring.length;

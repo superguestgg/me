@@ -24,22 +24,25 @@ min-height: 90%;
 top: 15%;
 transition: 0.3s ease-in-out;
 animation-duration: 0.3s;
+animation-timing-function: ease-out;
 animation-name: slidein;
 }
 
 @keyframes slidein {
   from {
-    left: -201.5%;
+    left: 0%;
 	height: 90%;
-	top: 200%;
-    width: 500%;
+	top: 100%;
+    width: calc(100% - 36px);
+    font-size: 25px;
   }
 
   to {
-    left: 1.5%;
+    left: 0%;
 	height: 90%;
 	top: 15%;
-    width: calc(95% - 80px);
+    width: calc(100% - 36px);
+    font-size: 22px;
   }
 }
 

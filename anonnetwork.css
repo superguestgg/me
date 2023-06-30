@@ -2,6 +2,7 @@ body{
 	background-image: linear-gradient(to left, #081018, #081018);
 	font-size: 15px;
 	margin-top: 50px;
+	font-family: calibri;
 }
 textarea{
 	color: #fff;

@@ -128,3 +128,8 @@ function load_text(id){
 	text = text.replaceAll("\n", "<br>");
 	document.getElementById(id).innerHTML = text;
 }
+
+
+function copylink(room_name, message_id){
+	navigator.clipboard.writeText(`phs3.na4u.ru/anonnetwork/${room_name}/${message_id}/`);
+}
